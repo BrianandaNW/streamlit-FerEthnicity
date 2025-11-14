@@ -1,4 +1,4 @@
-opencv-python==4.12.0.88
+opencv-python-headless
 numpy
 pandas
 tqdm
@@ -8,5 +8,4 @@ seaborn
 scikit-learn
 tensorflow
 joblib
-libgl1-mesa-glx
 streamlit
