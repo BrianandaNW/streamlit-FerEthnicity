@@ -301,8 +301,9 @@ with col_logo:
     )
 
 with col_title:
+    # 🌟 MODIFIKASI: Tambahkan 'margin-top: 0px;' ke style h1 untuk menghilangkan spasi atas default.
     st.markdown(
-        "<h1 style='color: #2F4F4F; font-size: 2.5rem;'>Emotion & Ethnicity Classifier v8</h1>",
+        "<h1 style='color: #2F4F4F; font-size: 2.5rem; margin-top: 0px;'>Emotion & Ethnicity Classifier </h1>",
         unsafe_allow_html=True
     )
     st.markdown(
