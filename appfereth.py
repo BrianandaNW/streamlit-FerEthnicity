@@ -285,7 +285,7 @@ def predict_image(image_pil):
 # --- TAMPILAN UTAMA STREAMLIT ---
 
 st.set_page_config(
-    page_title="Pure Landmark-Based Emotion & Ethnicity Classifier",
+    page_title="Facial Landmark And Texture Embedding Based Emotion & Ethnicity Classifier",
     layout="wide",
     initial_sidebar_state="expanded",
 )
@@ -296,7 +296,7 @@ col_logo, col_title = st.columns([1, 4])
 with col_logo:
     # Ganti URL ini dengan URL logo proyek Anda atau gunakan gambar lokal
     st.image(
-        "https://placehold.co/100x100/A0E7E5/1F2937?text=ML+Logo",
+        "https://chatgpt.com/backend-api/estuary/content?id=file_000000008a507209a8c931c34307ce54&ts=489843&p=fs&cid=1&sig=4b3774fef203e096ce4b1b0f3d734f625da8da05e1f4741794ade52aa705d44e&v=0",
         width=100
     )
 
@@ -306,7 +306,7 @@ with col_title:
         unsafe_allow_html=True
     )
     st.markdown(
-        "Aplikasi prediksi ganda berbasis gabungan Landmark, Fitur Lanjutan, dan CNN Embedding (SVC Model)."
+        "Geometric Feature Landmark Based And Deep Feature Embedding - Emotion And Etnicity Classifier."
     )
 
 st.divider()
@@ -321,7 +321,7 @@ image_source = None
 
 with tab_upload:
     uploaded_file = st.file_uploader(
-        "Unggah gambar wajah (JPG/PNG)",
+        "Unggah Gambar Wajah",
         type=["jpg", "jpeg", "png", "tiff"]
     )
     if uploaded_file:
