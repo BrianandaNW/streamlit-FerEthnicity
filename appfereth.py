@@ -10,7 +10,7 @@ from tensorflow.keras.applications.mobilenet_v2 import MobileNetV2, preprocess_i
 from tensorflow.keras.preprocessing.image import img_to_array
 from sklearn.preprocessing import StandardScaler
 # 🌟 BARU: Import komponen Streamlit-WebRTC
-from streamlit_webrtc import webrtc_stream, VideoProcessorBase, VideoTransformerBase, WebRtcMode, RTCConfiguration
+from streamlit_webrtc import webrtc_streamer, VideoProcessorBase, VideoTransformerBase, WebRtcMode, RTCConfiguration
 import av # Library untuk memproses frame video
 
 # --- KONFIGURASI DAN KONSTANTA (TIDAK BERUBAH) ---
@@ -345,10 +345,9 @@ st.info("Pastikan kamera Anda aktif. Hasil klasifikasi (Emosi & Etnis) akan dita
 # Konfigurasi WebRTC
 # RTC_CONFIGURATION = RTCConfiguration({"iceServers": [{"urls": ["stun:stun.l.google.com:19302"]}]})
 
-webrtc_stream(
+webrtc_streamer(
     key="realtime_detection",
     mode=WebRtcMode.SENDRECV,
-    # rtc_configuration=RTC_CONFIGURATION, # Opsional, untuk mengatasi masalah jaringan
     video_processor_factory=FaceClassifierTransformer,
     media_stream_constraints={"video": True, "audio": False},
     async_processing=True,
