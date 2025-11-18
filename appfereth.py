@@ -10,7 +10,7 @@ from tensorflow.keras.applications.mobilenet_v2 import MobileNetV2, preprocess_i
 from tensorflow.keras.preprocessing.image import img_to_array
 from sklearn.preprocessing import StandardScaler
 # 🌟 BARU: Import komponen Streamlit-WebRTC
-from streamlit_webrtc import webrtc_streamer, VideoTransformerBase, WebRtcMode, RTCConfiguration
+from streamlit_webrtc import webrtc_streamer, VideoProcessorBase, VideoTransformerBase, WebRtcMode, RTCConfiguration
 import av # Library untuk memproses frame video
 
 # --- KONFIGURASI DAN KONSTANTA (TIDAK BERUBAH) ---
@@ -356,7 +356,6 @@ webrtc_streamer(
     media_stream_constraints={"video": True, "audio": False},
     async_processing=True,
 )
-
 
 st.divider()
 
