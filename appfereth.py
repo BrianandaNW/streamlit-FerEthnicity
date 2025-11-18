@@ -298,7 +298,7 @@ with col_logo:
     # Ganti URL ini dengan URL logo proyek Anda atau gunakan gambar lokal
     st.image(
         "https://www.sandia.gov/app/uploads/sites/177/2022/04/MLDL_logo_2.jpg",
-        width=200
+        width=100
     )
 
 with col_title:
