@@ -292,13 +292,13 @@ st.set_page_config(
 
 # 1. Logo dan Judul
 # 🌟 MODIFIKASI: Mengurangi rasio lebar kolom teks (dari 4 menjadi 2)
-col_logo, col_title = st.columns([1, 2])
+col_logo, col_title = st.columns([1, 6])
 
 with col_logo:
     # Ganti URL ini dengan URL logo proyek Anda atau gunakan gambar lokal
     st.image(
         "https://www.sandia.gov/app/uploads/sites/177/2022/04/MLDL_logo_2.jpg",
-        width=100
+        width=200
     )
 
 with col_title:
