@@ -291,7 +291,8 @@ st.set_page_config(
 )
 
 # 1. Logo dan Judul
-col_logo, col_title = st.columns([1, 4])
+# 🌟 MODIFIKASI: Mengurangi rasio lebar kolom teks (dari 4 menjadi 2)
+col_logo, col_title = st.columns([1, 2])
 
 with col_logo:
     # Ganti URL ini dengan URL logo proyek Anda atau gunakan gambar lokal
@@ -301,7 +302,7 @@ with col_logo:
     )
 
 with col_title:
-    # 🌟 MODIFIKASI: Tambahkan 'margin-top: 0px;' ke style h1 untuk menghilangkan spasi atas default.
+    # Mengatasi margin atas (vertikal)
     st.markdown(
         "<h1 style='color: #2F4F4F; font-size: 2.5rem; margin-top: 0px;'>Emotion & Ethnicity Classifier </h1>",
         unsafe_allow_html=True
