@@ -296,7 +296,7 @@ col_logo, col_title = st.columns([1, 4])
 with col_logo:
     # Ganti URL ini dengan URL logo proyek Anda atau gunakan gambar lokal
     st.image(
-        "https://chatgpt.com/backend-api/estuary/content?id=file_000000008a507209a8c931c34307ce54&ts=489843&p=fs&cid=1&sig=4b3774fef203e096ce4b1b0f3d734f625da8da05e1f4741794ade52aa705d44e&v=0",
+        "https://www.sandia.gov/app/uploads/sites/177/2022/04/MLDL_logo_2.jpg",
         width=100
     )
 
